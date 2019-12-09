@@ -546,6 +546,14 @@ SEKCJA "CONTACT"
     font-style: normal;
 }
 
+.page-hamb {
+    display: none;
+    z-index: 3;
+    position: fixed;
+    top: 4%;
+    right: 8%;
+}
+
 @media(max-width: 360px) {
     .contact__address {
         padding: 5vh 5vh 0 5vh;
@@ -563,4 +571,53 @@ SEKCJA "CONTACT"
         flex-basis: 50%;
         padding-top: 40px;
     }
+
+    .page-brand {
+        z-index: 3;
+    }
+
+    .page-hamb {
+        display: none;
+        z-index: 3;
+        position: fixed;
+        top: 4%;
+        right: 8%;
+    }
+
+    @media (max-width:599px) {
+        .page-navigation {
+            display: none;
+            text-align: center;
+        }
+
+        .page-navigation__items {
+            height: 100vh;
+        }
+
+        .page-navigation__item {
+            width: 100%;
+            display: inline-block;
+            padding-top: 30px;
+            font-size: 30px;
+            line-height: 70px;
+        }
+
+        .page-navigation-mobile-active {
+            display: inline-block;
+            position: fixed;
+            background-color: black;
+            top: 0;
+            z-index: 1;
+
+
+        }
+
+        .page-hamb {
+            display: inline-block;
+            position: fixed;
+            top: 4%;
+            right: 8%;
+        }
+    }
+
 }
